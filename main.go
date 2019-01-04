@@ -20,10 +20,6 @@ func main() {
 		panic(err)
 	}
 
-	if err != nil {
-		panic(err)
-	}
-
 	err = page.Navigate("https://prb01.payroll.co.jp/epayc/")
 	if err != nil {
 		panic(err)
