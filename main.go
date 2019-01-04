@@ -56,8 +56,6 @@ func main() {
 
 	now := time.Now()
 
-	err = fmt.Errorf("mock")
-
 	time.Sleep(10 * time.Second)
 
 	err = page.NextWindow()
