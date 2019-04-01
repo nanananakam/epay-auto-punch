@@ -88,6 +88,13 @@ func main() {
 		panic(err)
 	}
 
+	err = page.Find("#navigation > ul > li.lastchild").Click()
+
+	if err != nil {
+		driver.Stop()
+		panic(err)
+	}
+
 	err = driver.Stop()
 	if err != nil {
 		panic(err)
